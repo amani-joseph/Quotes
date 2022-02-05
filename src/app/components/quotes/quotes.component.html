@@ -24,7 +24,9 @@
       <span>
         <button class="upVote">upVote</button>
         <button class="downVote">downVote</button>
-        <button class="delete">Delete Quote</button>
+        <button class="delete" (click)="removeQuote(quote.id)">
+          Delete Quote
+        </button>
       </span>
     </div>
   </div>
