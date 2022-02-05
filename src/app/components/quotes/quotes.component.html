@@ -13,8 +13,8 @@
   <div class="quotes">
     <div class="quote">
       <div class="votes">
-        <span class="upVotes">upVotes: 0</span>
-        <span class="downVotes">downVotes: 0</span>
+        <span class="upVotes">upVotes: {{ quote.upVotes }}</span>
+        <span class="downVotes">downVotes: {{ quote.downVotes }}</span>
       </div>
       <div class="content">
         <div>{{ quote.quote }}</div>
@@ -22,8 +22,8 @@
       </div>
 
       <span>
-        <button class="upVote">upVote</button>
-        <button class="downVote">downVote</button>
+        <button class="upVote" (click)="upVote(quote.upVotes)">upVote</button>
+        <button class="downVote" (click)="downVote(quote.downVotes)">downVote</button>
         <button class="delete" (click)="removeQuote(quote.id)">
           Delete Quote
         </button>

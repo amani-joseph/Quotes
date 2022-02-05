@@ -7,13 +7,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    { id: 1, quote: 'My 1st quote of the day', author: 'Joe' },
-    { id: 2, quote: 'My 2nd quote of the day', author: 'Jack' },
-    { id: 3, quote: 'My 3rd quote of the day', author: 'Jim' },
+    {
+      id: 1,
+      upVotes: 0,
+      downVotes: 0,
+      quote: 'My 1st quote of the day',
+      author: 'Joe',
+    },
+    {
+      id: 2,
+      upVotes: 0,
+      downVotes: 0,
+      quote: 'My 2nd quote of the day',
+      author: 'Jack',
+    },
+    {
+      id: 3,
+      upVotes: 0,
+      downVotes: 0,
+      quote: 'My 3rd quote of the day',
+      author: 'Jim',
+    },
   ];
+  upVote(upVotes: number): any {
+    let newUpVotes = upVotes + 1;
+    return newUpVotes;
+    console.log(newUpVotes);
+  }
+  downVote(upVotes: number): void {
+    upVotes -= 1;
+  }
 
   removeQuote(id: number): void {
-    console.log('removeQuote', id);
+    this.quotes = this.quotes.filter((quote) => quote.id !== id);
   }
 
   // title: string = 'Quotes-App';
