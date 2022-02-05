@@ -1,0 +1,27 @@
+<!-- <div class="quotes">
+  <div class="quote">
+    <div class="id">0</div>
+    <div class="content">My quote</div>
+    <span>
+      <button class="upVote">upVote</button>
+      <button class="downVote">downVote</button>
+      <button class="delete">delete</button>
+    </span>
+  </div>
+</div> -->
+<div *ngFor="let quote of quotes">
+  <div class="quotes">
+    <div class="quote">
+      <div class="votes">
+        <span class="upVotes">upVotes: 0</span>
+      <span class="downVotes">downVotes: 0</span>
+      </div>
+      <div class="content">{{ quote }}</div>
+      <span>
+        <button class="upVote">upVote</button>
+        <button class="downVote">downVote</button>
+        <button class="delete">delete</button>
+      </span>
+    </div>
+  </div>
+</div>
