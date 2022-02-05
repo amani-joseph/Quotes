@@ -14,13 +14,17 @@
     <div class="quote">
       <div class="votes">
         <span class="upVotes">upVotes: 0</span>
-      <span class="downVotes">downVotes: 0</span>
+        <span class="downVotes">downVotes: 0</span>
       </div>
-      <div class="content">{{ quote }}</div>
+      <div class="content">
+        <div>{{ quote.quote }}</div>
+        <div class="author">by: {{ quote.author }}</div>
+      </div>
+
       <span>
         <button class="upVote">upVote</button>
         <button class="downVote">downVote</button>
-        <button class="delete">delete</button>
+        <button class="delete">Delete Quote</button>
       </span>
     </div>
   </div>

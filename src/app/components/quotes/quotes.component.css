@@ -1,0 +1,92 @@
+.votes {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  font-size: medium;
+  font-weight: 500;
+}
+.quote {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 15px;
+  border-bottom: 1px solid #09223b;
+}
+
+.content {
+  justify-content: center;
+  min-width: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.author {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.upVote,
+.upVotes {
+  align-items: center;
+  background-color: #0ac223;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  width: 150px;
+  max-width: 480px;
+  min-height: 30px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.downVote,
+.downVotes {
+  align-items: center;
+  background-color: #0a66c2;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  width: 150px;
+  max-width: 480px;
+  min-height: 30px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  vertical-align: middle;
+}
+.delete {
+  align-items: center;
+  background-color: rgb(241, 62, 18);
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  width: 150px;
+  max-width: 480px;
+  min-height: 30px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  vertical-align: middle;
+}

@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    'My 1st quote of the day',
-    'My 2nd quote of the day',
-    'My 3rd quote of the day',
+    { quote: 'My 1st quote of the day', author: 'Joe' },
+    { quote: 'My 2nd quote of the day', author: 'Jack' },
+    { quote: 'My 3rd quote of the day', author: 'Jim' },
   ];
+
+  // title: string = 'Quotes-App';
 
   constructor() {}
 

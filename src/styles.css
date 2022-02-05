@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 80%;
+  justify-content: center;
+  justify-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+}
+.inputField {
+  text-align: center;
+  width: 600px;
+}
