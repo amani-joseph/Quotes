@@ -62,6 +62,9 @@ export class QuotesComponent implements OnInit {
       author: this.InputAuthor,
     };
     this.quotes.push(newQuote);
+    this.InputQuote = '';
+    this.InputAuthor = '';
+
     console.log(uniqueId);
   }
   // title: string = 'Quotes-App';
