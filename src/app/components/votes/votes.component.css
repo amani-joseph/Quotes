@@ -8,28 +8,38 @@
 .allVotes {
   font-size: larger;
   align-items: center;
-  background-color: #4f5550;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    -225deg,
+    #a445b2 0%,
+    #d41872 52%,
+    #ff0066 100%
+  );
   border: 0;
   border-radius: 100px;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
-  display: inline-flex;
-  width: 100px;
+  /* display: inline-flex; */
+  width: 150px;
   height: 50px;
   max-width: 480px;
   min-height: 30px;
   min-width: 0px;
   overflow: hidden;
-  padding: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: center;
   vertical-align: middle;
 }
 .upVote {
   align-items: center;
-  background-color: #0ac223;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(61, 245, 167, 1) 11.2%,
+    rgba(9, 111, 224, 1) 91.1%
+  );
   border: 0;
   border-radius: 100px;
   box-sizing: border-box;
@@ -49,7 +59,18 @@
 }
 .downVote {
   align-items: center;
-  background-color: #0a66c2;
+  background: #fc4a1a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f7b733,
+    #fc4a1a
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f7b733,
+    #fc4a1a
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border: 0;
   border-radius: 100px;
   box-sizing: border-box;

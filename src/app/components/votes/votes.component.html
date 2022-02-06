@@ -1,10 +1,12 @@
 <div class="votes">
-  <span class="allVotes">{{ Votes }}</span>
+  <span class="allVotes">Total Votes: {{ Votes }}</span>
 </div>
 
 <span>
-  <button class="upVote" (click)="upVote()">upVote</button>
-  <button class="downVote" (click)="downVote()">downVote</button>
+  <button class="upVote" (click)="upVote()">upVote: {{ upVotes }}</button>
+  <button class="downVote" (click)="downVote()">
+    downVote: {{ downVotes }}
+  </button>
   <!-- <button class="delete" (click)="removeQuote(quote.id)">
     Delete Quote
   </button> -->
