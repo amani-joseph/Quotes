@@ -1,13 +1,10 @@
 <div class="votes">
   <span class="allVotes">Total Votes: {{ Votes }}</span>
 </div>
-
+<!-- BUTTONS /UP-VOTE/DOWN-VOTE BOTH BOUND TO THE CLICK EVENT -->
 <span>
   <button class="upVote" (click)="upVote()">upVote: {{ upVotes }}</button>
   <button class="downVote" (click)="downVote()">
     downVote: {{ downVotes }}
   </button>
-  <!-- <button class="delete" (click)="removeQuote(quote.id)">
-    Delete Quote
-  </button> -->
 </span>
