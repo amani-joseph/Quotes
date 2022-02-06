@@ -8,15 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class QuotesComponent implements OnInit {
   InputQuote: string = '';
   InputAuthor: string = '';
-  Votes: number = 0;
-  upVote() {
-    console.log('upVote');
-    this.Votes++;
-  }
-  downVote() {
-    console.log('downVote');
-    this.Votes--;
-  }
+
   quotes = [
     {
       id: 1,

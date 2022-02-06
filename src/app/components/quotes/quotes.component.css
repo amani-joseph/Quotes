@@ -1,3 +1,11 @@
+h1 {
+  align-items: center;
+  font-weight: 900;
+  font-size: 3rem;
+  color: #09223b;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
 input {
   font-family: "Roboto", sans-serif;
   color: #333;
@@ -5,7 +13,7 @@ input {
   margin: 0 auto;
   padding: 1.5rem 2rem;
   border-radius: 0.2rem;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(165, 186, 204);
   border: none;
   width: 90%;
   display: block;
@@ -89,7 +97,7 @@ input {
 
 .content {
   justify-content: center;
-  min-width: 450px;
+  min-width: 90%;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
@@ -100,46 +108,6 @@ input {
   font-weight: 100;
 }
 
-.upVote {
-  align-items: center;
-  background-color: #0ac223;
-  border: 0;
-  border-radius: 100px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-flex;
-  width: 150px;
-  max-width: 480px;
-  min-height: 30px;
-  min-width: 0px;
-  overflow: hidden;
-  padding: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  vertical-align: middle;
-}
-.downVote {
-  align-items: center;
-  background-color: #0a66c2;
-  border: 0;
-  border-radius: 100px;
-  box-sizing: border-box;
-  color: #ffffff;
-  cursor: pointer;
-  display: inline-flex;
-  width: 150px;
-  max-width: 480px;
-  min-height: 30px;
-  min-width: 0px;
-  overflow: hidden;
-  padding: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-align: center;
-  vertical-align: middle;
-}
 .delete {
   align-items: center;
   background-color: rgb(241, 62, 18);

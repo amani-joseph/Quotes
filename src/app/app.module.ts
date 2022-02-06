@@ -4,9 +4,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { QuotesComponent } from './components/quotes/quotes.component';
+import { VotesComponent } from './components/votes/votes.component';
 
 @NgModule({
-  declarations: [AppComponent, QuotesComponent],
+  declarations: [AppComponent, QuotesComponent, VotesComponent],
   imports: [BrowserModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

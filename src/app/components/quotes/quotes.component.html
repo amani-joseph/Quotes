@@ -9,7 +9,7 @@
     [(ngModel)]="InputQuote"
   />
   <input
-    placeholder="...by <your name>..."
+    placeholder="By..."
     class="form__input"
     type="text"
     [(ngModel)]="InputAuthor"
@@ -27,7 +27,8 @@
     <div class="quotes">
       <div class="quote">
         <div class="votes">
-          <span class="allVotes">{{ quote.Votes }}</span>
+          <app-votes></app-votes>
+          <!-- <span class="allVotes">{{ quote.Votes }}</span> -->
         </div>
         <div class="content">
           <div>{{ quote.quote }}</div>
@@ -35,8 +36,8 @@
         </div>
 
         <span>
-          <button class="upVote" (click)="upVote()">upVote</button>
-          <button class="downVote" (click)="downVote()">downVote</button>
+          <!-- <button class="upVote" (click)="upVote()">upVote</button>
+          <button class="downVote" (click)="downVote()">downVote</button> -->
           <button class="delete" (click)="removeQuote(quote.id)">
             Delete Quote
           </button>
