@@ -1,33 +1,65 @@
-<!-- <div class="quotes">
-  <div class="quote">
-    <div class="id">0</div>
-    <div class="content">My quote</div>
-    <span>
-      <button class="upVote">upVote</button>
-      <button class="downVote">downVote</button>
-      <button class="delete">delete</button>
-    </span>
-  </div>
-</div> -->
-<div *ngFor="let quote of quotes">
-  <div class="quotes">
-    <div class="quote">
-      <div class="votes">
-        <span class="upVotes">upVotes: {{ quote.upVotes }}</span>
-        <span class="downVotes">downVotes: {{ quote.downVotes }}</span>
-      </div>
-      <div class="content">
-        <div>{{ quote.quote }}</div>
-        <div class="author">by: {{ quote.author }}</div>
-      </div>
+<header>
+  <h1>Quote of the day!!</h1>
+</header>
+<div class="inputField">
+  <input
+    placeholder="Enter your quote here..."
+    class="form__input"
+    type="text"
+    [(ngModel)]="InputQuote"
+  />
+  <input
+    placeholder="Enter your name here..."
+    class="form__input"
+    type="text"
+    [(ngModel)]="InputAuthor"
+  />
+  <input
+    type="submit"
+    value="Add Quote"
+    (click)="addQuote()"
+    class="addQuote"
+  />
 
-      <span>
-        <button class="upVote" (click)="upVote(quote.upVotes)">upVote</button>
-        <button class="downVote" (click)="downVote(quote.downVotes)">downVote</button>
-        <button class="delete" (click)="removeQuote(quote.id)">
-          Delete Quote
-        </button>
-      </span>
+  <!-- <button class="addQuote" (click)="addQuote()">Add Quote</button> -->
+
+  <!-- <div class="inputField">
+     (change)="setNewQuote($event.target.value)"
+    <input
+      type="text"
+      (change)="setNewAuthor($event.target.value)"
+      [value]="newAuthor"
+      class="form__input"
+      placeholder="Enter your name here..."
+    /> -->
+
+  <!-- <div></div> -->
+</div>
+<!-- <input type="text"> -->
+
+<section>
+  <div *ngFor="let quote of quotes">
+    <div class="quotes">
+      <div class="quote">
+        <div class="votes">
+          <span class="upVotes">upVotes: {{ quote.upVotes }}</span>
+          <span class="downVotes">downVotes: {{ quote.downVotes }}</span>
+        </div>
+        <div class="content">
+          <div>{{ quote.quote }}</div>
+          <div class="author">by: {{ quote.author }}</div>
+        </div>
+
+        <span>
+          <button class="upVote" (click)="upVote(quote.upVotes)">upVote</button>
+          <button class="downVote" (click)="downVote(quote.downVotes)">
+            downVote
+          </button>
+          <button class="delete" (click)="removeQuote(quote.id)">
+            Delete Quote
+          </button>
+        </span>
+      </div>
     </div>
   </div>
-</div>
+</section>

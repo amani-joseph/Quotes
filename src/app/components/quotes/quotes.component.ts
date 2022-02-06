@@ -6,26 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quotes.component.css'],
 })
 export class QuotesComponent implements OnInit {
+  InputQuote: string = '';
+  InputAuthor: string = '';
+  upVotes: number = 0;
+  downVotes: number = 0;
   quotes = [
     {
       id: 1,
       upVotes: 0,
       downVotes: 0,
-      quote: 'My 1st quote of the day',
+      quote: 'The purpose of our lives is to be happy.',
       author: 'Joe',
     },
     {
       id: 2,
       upVotes: 0,
       downVotes: 0,
-      quote: 'My 2nd quote of the day',
+      quote: 'Life is what happens when you’re busy making other plans.',
       author: 'Jack',
     },
     {
       id: 3,
       upVotes: 0,
       downVotes: 0,
-      quote: 'My 3rd quote of the day',
+      quote: 'Get busy living or get busy dying',
       author: 'Jim',
     },
   ];
@@ -41,7 +45,25 @@ export class QuotesComponent implements OnInit {
   removeQuote(id: number): void {
     this.quotes = this.quotes.filter((quote) => quote.id !== id);
   }
+  setNewQuote(Quote: string): void {
+    this.InputQuote = Quote;
+    console.log('setNewQuote', Quote);
+  }
 
+  // setNewAuthor() {}
+
+  addQuote(): void {
+    const uniqueId: number = Math.trunc(Math.random() * 1000);
+    const newQuote = {
+      id: uniqueId,
+      upVotes: 0,
+      downVotes: 0,
+      quote: this.InputQuote,
+      author: this.InputAuthor,
+    };
+    this.quotes.push(newQuote);
+    console.log(uniqueId);
+  }
   // title: string = 'Quotes-App';
 
   constructor() {}
