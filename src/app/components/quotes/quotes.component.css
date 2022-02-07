@@ -115,7 +115,7 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 10px 15px;
+  padding: 5px 5px;
   border-bottom: 1px solid #4d0e58;
 }
 

@@ -19,7 +19,6 @@
     type="submit"
     value="Add Quote"
     (click)="addQuote()"
-    (click)="timeStamp()"
     [disabled]="InputQuote === '' || InputAuthor === ''"
     class="addQuote"
   />
@@ -35,7 +34,7 @@
         <div class="content">
           <div>{{ quote.quote }}</div>
           <div class="author">by: {{ quote.author }}</div>
-          <div class="author">On: {{ timeCreated | date: "medium" }}</div>
+          <div class="author"><app-time-stamp></app-time-stamp></div>
         </div>
 
         <span>

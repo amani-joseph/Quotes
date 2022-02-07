@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class QuotesComponent implements OnInit {
   InputQuote: string = '';
   InputAuthor: string = '';
-  timeCreated: string = '';
+  // timeCreated = Date.now();
 
   quotes = [
     {
@@ -24,19 +24,14 @@ export class QuotesComponent implements OnInit {
     //   quote: 'Life is what happens when you’re busy making other plans.',
     //   author: 'Jack',
     // },
-    // {
-    //   id: 3,
-    //   upVotes: 0,
-    //   downVotes: 0,
-    //   quote: 'Get busy living or get busy dying',
-    //   author: 'Jim',
-    // },
+    {
+      id: 2,
+      upVotes: 0,
+      downVotes: 0,
+      quote: '3 wise words are two words too many',
+      author: 'Amani',
+    },
   ];
-  // DATE PIPE
-
-  timeStamp() {
-    this.timeCreated = Date.now().toString();
-  }
 
   removeQuote(id: number): void {
     this.quotes = this.quotes.filter((quote) => quote.id !== id);
