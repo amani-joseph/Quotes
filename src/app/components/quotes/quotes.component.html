@@ -1,6 +1,7 @@
 <header>
   <h1>Quote of the day!!</h1>
 </header>
+
 <div class="inputField">
   <input
     placeholder="Enter your quote here..."
@@ -18,6 +19,8 @@
     type="submit"
     value="Add Quote"
     (click)="addQuote()"
+    (click)="timeStamp()"
+    [disabled]="InputQuote === '' || InputAuthor === ''"
     class="addQuote"
   />
 </div>
@@ -32,6 +35,7 @@
         <div class="content">
           <div>{{ quote.quote }}</div>
           <div class="author">by: {{ quote.author }}</div>
+          <div class="author">On: {{ timeCreated | date: "medium" }}</div>
         </div>
 
         <span>

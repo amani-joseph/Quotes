@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class QuotesComponent implements OnInit {
   InputQuote: string = '';
   InputAuthor: string = '';
+  timeCreated: string = '';
 
   quotes = [
     {
@@ -31,6 +32,11 @@ export class QuotesComponent implements OnInit {
     //   author: 'Jim',
     // },
   ];
+  // DATE PIPE
+
+  timeStamp() {
+    this.timeCreated = Date.now().toString();
+  }
 
   removeQuote(id: number): void {
     this.quotes = this.quotes.filter((quote) => quote.id !== id);
