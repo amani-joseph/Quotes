@@ -17,6 +17,13 @@ export class QuotesComponent implements OnInit {
       quote: 'The purpose of our lives is to be happy.',
       author: 'Joe',
     },
+
+    {
+      id: 1,
+      Votes: 10,
+      quote: 'The purpose of our lives is to be happy.',
+      author: 'Joe',
+    },
     // {
     //   id: 2,
     //   upVotes: 0,
@@ -26,8 +33,8 @@ export class QuotesComponent implements OnInit {
     // },
     {
       id: 2,
-      upVotes: 0,
-      downVotes: 0,
+      upVotes: 10,
+      downVotes: 11,
       quote: '3 wise words are two words too many',
       author: 'Amani',
     },
