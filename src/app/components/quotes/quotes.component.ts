@@ -14,7 +14,7 @@ export class QuotesComponent implements OnInit {
     {
       id: 1,
       Votes: 0,
-      quote: 'The purpose of our lives is to be happy.',
+      quote: 'Three wise words are two words too many.',
       author: 'Joe',
     },
 
@@ -31,13 +31,13 @@ export class QuotesComponent implements OnInit {
     //   quote: 'Life is what happens when you’re busy making other plans.',
     //   author: 'Jack',
     // },
-    {
-      id: 3,
-      upVotes: 0,
-      downVotes: 0,
-      quote: '3 wise words are two words too many',
-      author: 'Amani',
-    },
+    // {
+    //   id: 3,
+    //   upVotes: 0,
+    //   downVotes: 0,
+    //   quote: '3 wise words are two words too many',
+    //   author: 'Amani',
+    // },
   ];
 
   removeQuote(id: number): void {
