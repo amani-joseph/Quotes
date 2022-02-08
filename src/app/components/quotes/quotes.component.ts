@@ -19,7 +19,7 @@ export class QuotesComponent implements OnInit {
     },
 
     {
-      id: 1,
+      id: 2,
       Votes: 10,
       quote: 'The purpose of our lives is to be happy.',
       author: 'Joe',
@@ -32,9 +32,9 @@ export class QuotesComponent implements OnInit {
     //   author: 'Jack',
     // },
     {
-      id: 2,
-      upVotes: 10,
-      downVotes: 11,
+      id: 3,
+      upVotes: 0,
+      downVotes: 0,
       quote: '3 wise words are two words too many',
       author: 'Amani',
     },
@@ -64,6 +64,7 @@ export class QuotesComponent implements OnInit {
 
     console.log(uniqueId);
   }
+
   // title: string = 'Quotes-App';
 
   constructor() {}

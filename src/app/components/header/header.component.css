@@ -1,0 +1,26 @@
+.header {
+  background-image: url("https://images.unsplash.com/photo-1468434453985-b1ca3b555f00?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  color: #09223b;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  padding: 20px;
+}
+.liner {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #09223b;
+  width: 100%;
+
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+}
